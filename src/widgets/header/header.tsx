@@ -9,7 +9,7 @@ export const Header = () => {
 		<header className={styles.header}>
 			<div className='container'>
 				<div className={styles.header__wrapper}>
-					<Image src='/logo.svg' alt='logo' width={100} height={100} />
+					<Image src='/logo.svg' alt='logo' width={40} height={40} />
 					<nav className={styles.header__nav}>
 						<ul className={styles.header__nav_list}>
 							<li>Home</li>

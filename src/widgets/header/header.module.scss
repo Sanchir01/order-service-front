@@ -1,16 +1,25 @@
 .header {
 	height: 100px;
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 100;
-	background-color: yellow;
+	background: linear-gradient(
+		270deg,
+		#e0c3fc,
+		#8ec5fc,
+		#6a11cb,
+		#2575fc,
+		#6a11cb,
+		#e0c3fc
+	);
+	background-size: 1200% 1200%;
+	color: #fff;
 	&__wrapper {
+		padding: 26 0px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		width: 100%;
 	}
 	&__nav {
 		display: flex;
@@ -22,6 +31,13 @@
 		gap: 20px;
 		justify-content: space-between;
 		align-items: center;
+		li {
+			transition: all 0.2s;
+			transform: ease-in;
+		}
+		li:hover {
+			color: rgb(191, 5, 247);
+		}
 	}
 	&__actions {
 		display: flex;

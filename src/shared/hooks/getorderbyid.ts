@@ -7,6 +7,6 @@ export const useGetOrderById = (id: string) => {
 		queryKey: ['order', id],
 		queryFn: () => orderService.getOrdersById(id),
 		enabled: !!id,
-		select: (data) => data.Data
+		select: data => data.Data
 	})
 }

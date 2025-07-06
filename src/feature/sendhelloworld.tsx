@@ -1,5 +1,3 @@
 export const SendAlert = () => {
-  return (
-    <div>asdasd</div>
-  )
+	return <div>asdasd</div>
 }
